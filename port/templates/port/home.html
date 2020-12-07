@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Darshan</title>
+</head>
+<body>
+    <div class="container w-100 border">
+        <div class="row">
+            <div class="col">
+                <h1>DARSHAN B</h1>
+            </div>
+            <div class="col">
+                <h5>Email:  bdarshan363@gmail.com</h5>
+                <h5>Mobile: +91 9663096140</h5>
+            </div>
+        </div><hr>
+        <h5 class="m-5">Projects Done</h5>
+        <div class="d-flex justify-content-around">
+            <button class="btn btn-primary btn-sm" id="django">Django</button>
+            <button class="btn btn-primary btn-sm" id="react">React js</button>
+            <button class="btn btn-primary btn-sm" id="flask">Flask</button>
+        </div>
+        <div class="m-5">
+            <div class="custom" id="djangoDisplay" style="display:block;background-color:#DCDCDC;padding:10px">
+                <h6>E-commerce :</h6>
+                <p>Build a e-commerce website using the django as the framework where users can register and login to view the products
+                and Add them to cart. Form there the can checkout by filling the address and doing the payment. Only clint side payment integration was done
+                    <a href="#">Click here you visit the site</a>
+                </p>
+                <h6 class="mt-3">Built a blog application</h6>
+                <p>Build a blog application were users register and login to post there blog and they can delete or update the post they also can update the profile</p>
+                <a href="#">Click here you visit the site</a>
+                <h6 class="mt-3">Build a portfolio</h6>
+                <p>Built a portfolio using django framework and hosted in heroku </p>
+            </div>
+            <div class="custom" id="reactDisplay" style="display:none;background-color:#B0E0E6;padding:10px">
+                <h6 class="mt-3">ToDo app</h6>
+                <p>set up the backend in django and request are sent from react to backend API and performed CURD operations</p>
+                <h6 class="mt-3">Build a frontend for Blog application</h6>
+                <p>Set up the store , use the react-redux with middleware 'thunk'</p>
+            </div>
+            <div class="custom" id="flaskDisplay" style="display:none; background-color:#006400;padding:10px; color:white">
+                <h6>Built more than 15 DBMS projects</h6>
+            </div>
+        </div>
+        <h5 class="m-5">Qualification :</h5>
+        <table class=" table table-striped">
+            <thead>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr>
+                        <th>B.E(ECE)</th>
+                        <th>SDM institute of technology ,Ujire</th>
+                        <th>2019</th>
+                        <th>6.2</th>
+                    </tr>
+                    <tr>
+                        <th>PUC</th>
+                        <th>SAI PU college
+                            ,shimoga</th>
+                        <th>2015</th>
+                        <th>78%</th>
+                    </tr>
+                    <tr>
+                        <th>SSLC</th>
+                        <th>Sri Adichunchangiri
+                            composite high school<br>
+                            ,shimoga</th>
+                        <th>2013</th>
+                        <th>78%</th>
+                    </tr>
+                </tbody>
+        </table>
+        <h5 class="m-5">Skills :</h5>
+        <div class="ml-5">
+            <p>Programming Language : C, Python </p>
+            <p>Web framework        : Flask, Django</p>
+            <p>Frontend             : javascript, React.js</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script>
+
+document.getElementById("django").addEventListener("click", handelDjango)
+function handelDjango(){
+    const django = document.getElementById("djangoDisplay");
+    const flask = document.getElementById("flaskDisplay");
+    const react = document.getElementById("reactDisplay");
+    django.style.display = "block";
+    flask.style.display = "none"
+    react.style.display = "none"
+};
+
+document.getElementById("react").addEventListener("click", handelreact)
+function handelreact(){
+    const django = document.getElementById("djangoDisplay");
+    const flask = document.getElementById("flaskDisplay");
+    const react = document.getElementById("reactDisplay");
+    django.style.display = "none";
+    flask.style.display = "none"
+    react.style.display = "block"
+};
+
+document.getElementById("flask").addEventListener("click", handelflask)
+function handelflask(){
+    const django = document.getElementById("djangoDisplay");
+    const flask = document.getElementById("flaskDisplay");
+    const react = document.getElementById("reactDisplay");
+    django.style.display = "none";
+    flask.style.display = "block"
+    react.style.display = "none"
+};
+
+
+
+    </script>
+
+</body>
+</html>
